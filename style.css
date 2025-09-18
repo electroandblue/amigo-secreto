@@ -39,6 +39,11 @@ body {
     padding: 40px 0 0;
 }
 
+.header-banner img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Sección de entrada */
 .input-section {
     flex: 60%;
@@ -59,6 +64,7 @@ body {
     font-weight: 900;
     font-style: italic;
     color: var(--color-white);
+    text-align: center;
 }
 
 .section-title {
@@ -160,6 +166,8 @@ ul {
 .button-draw:hover {
     background-color: var(--color-button-hover);
 }
+
+/* Modal */
 #customAlert {
   display: none;
   position: fixed;
@@ -194,3 +202,93 @@ ul {
   border-radius: 5px;
   cursor: pointer;
 }
+
+/* ===========================
+   MEDIA QUERIES - RESPONSIVO
+=========================== */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 36px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .input-wrapper {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .input-name,
+  .button-add {
+    width: 100%;
+    border-radius: 25px;
+  }
+
+  .button-container {
+    width: 80%;
+  }
+
+  .button-draw {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .button-draw img {
+    margin-right: 20px;
+    width: 24px;
+    height: 24px;
+  }
+
+  ul {
+    font-size: 16px;
+  }
+
+  .result-list {
+    font-size: 20px;
+  }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+  .main-title {
+    font-size: 28px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .input-wrapper {
+    padding: 0 10px;
+  }
+
+  .button-container {
+    width: 100%;
+  }
+
+  .button-draw {
+    flex-direction: column;
+    gap: 5px;
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .button-draw img {
+    margin: 0;
+    width: 20px;
+    height: 20px;
+  }
+
+  ul {
+    font-size: 14px;
+  }
+
+  .result-list {
+    font-size: 18px;
+  }
+}
+
