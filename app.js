@@ -8,7 +8,13 @@ function agregarAmigo() {
 
   // Validar entrada vacía
   if (nombre === "") {
-    mostrarAlerta();
+    mostrarAlerta("⚠️ Por favor, ingrese un nombre válido.");
+    return;
+  }
+
+  // Validar que no se repita
+  if (amigos.includes(nombre)) {
+    mostrarAlerta("⚠️ Ese nombre ya está en la lista.");
     return;
   }
 
@@ -36,9 +42,8 @@ function actualizarLista() {
 
 // Función para sortear un amigo aleatorio
 function sortearAmigo() {
-  if (amigos.length === 0) {
-    document.getElementById("resultado").innerHTML =
-      "No hay amigos en la lista para sortear.";
+  if (amigos.length < 2) {
+    mostrarAlerta("⚠️ Debes añadir al menos 2 nombres para realizar el sorteo.");
     return;
   }
 
@@ -52,14 +57,15 @@ function sortearAmigo() {
 }
 
 // --------- ALERTA PERSONALIZADA ---------
-// Mostrar alerta si el campo está vacío
-function mostrarAlerta() {
+function mostrarAlerta(mensaje) {
   let alerta = document.getElementById("customAlert");
+  let alertMessage = document.getElementById("alertMessage");
+  alertMessage.textContent = mensaje;
   alerta.style.display = "flex";
 }
 
-// Cerrar la alerta
 function cerrarAlerta() {
   let alerta = document.getElementById("customAlert");
   alerta.style.display = "none";
 }
+
