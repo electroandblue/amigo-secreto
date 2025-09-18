@@ -19,7 +19,9 @@ Permite agregar nombres a una lista y luego sortear uno aleatoriamente.
 
 ## 📂 Estructura del proyecto
 amigo-secreto/
-│── index.html
-│── style.css
-│── app.js
-│── README.md
+├── index.html
+├── style.css
+├── app.js
+├── assets/
+│   ├── amigo-secreto.png
+│   └── play_circle_outline.png
