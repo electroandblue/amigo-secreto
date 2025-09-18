@@ -10,3 +10,21 @@ Permite agregar nombres a una lista y luego sortear uno aleatoriamente.
 - Validación: no permite campos vacíos (alerta personalizada).
 - Visualización de la lista ingresada.
 - Sorteo aleatorio mostrando el resultado en pantalla.
+
+# 🎁 Amigo Secreto
+
+Aplicación web para organizar un sorteo de "Amigo Secreto".  
+Permite agregar nombres a una lista y luego sortear uno aleatoriamente.
+
+## 🚀 Funcionalidades
+- Agregar amigos mediante un campo de texto.
+- Validación: no permite campos vacíos (alerta personalizada).
+- Visualización de la lista ingresada.
+- Sorteo aleatorio mostrando el resultado en pantalla.
+
+## 🛠️ Tecnologías utilizadas
+- HTML
+- CSS
+- JavaScript
+
+
