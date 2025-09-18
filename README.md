@@ -27,4 +27,9 @@ Permite agregar nombres a una lista y luego sortear uno aleatoriamente.
 - CSS
 - JavaScript
 
-
+## 📂 Estructura del proyecto
+amigo-secreto/
+│── index.html
+│── style.css
+│── app.js
+│── README.md
