@@ -60,7 +60,7 @@ function sortearAmigo() {
 function mostrarAlerta(mensaje) {
   let alerta = document.getElementById("customAlert");
   let alertMessage = document.getElementById("alertMessage");
-  alertMessage.textContent = mensaje;
+  alertMessage.textContent = mensaje; // <-- aquí se cambia dinámicamente el mensaje
   alerta.style.display = "flex";
 }
 
